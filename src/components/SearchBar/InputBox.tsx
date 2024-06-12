@@ -6,7 +6,6 @@ type inputBoxProps = {
 const InputBox = ({ value, setValue }: inputBoxProps) => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
-    console.log(event.target.value);
   };
   return (
     <input

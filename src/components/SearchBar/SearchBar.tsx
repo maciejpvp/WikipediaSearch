@@ -24,7 +24,7 @@ const SearchBar = ({ inputBoxValue, setInputBoxValue }: SearchBarProps) => {
         <InputBox value={inputBoxValue} setValue={setInputBoxValue} />
         <span className="text-xl flex flex-row gap-2">
           <SearchButton />
-          <RandomArticle />
+          {!inputBoxValue && <RandomArticle />}
         </span>
       </form>
     </motion.div>
